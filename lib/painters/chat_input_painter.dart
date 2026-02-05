@@ -102,26 +102,7 @@ class FuturisticChatPainter extends CustomPainter {
       size.height,
     );
 
-    path.lineTo(r + tailW, size.height);
-
     // Futuristic curved tail
-    path.cubicTo(
-      r + tailW - 4,
-      size.height,
-      r + tailW - 6,
-      size.height + tailH,
-      r,
-      size.height + tailH,
-    );
-
-    path.cubicTo(
-      r + 4,
-      size.height + tailH,
-      r + 6,
-      size.height,
-      r - 6,
-      size.height,
-    );
 
     path.lineTo(r, size.height);
     path.quadraticBezierTo(0, size.height, 0, size.height - r);
