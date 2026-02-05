@@ -21,9 +21,16 @@ class ChatInput extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
+                  style: const TextStyle(
+                    color: Colors.white, // Input text color
+                  ),
                   decoration: const InputDecoration(
                     border: InputBorder.none,
                     hintText: "Ask something...",
+                    hintStyle: TextStyle(
+                      color: Colors
+                          .white54, // Hint text color (slightly transparent white)
+                    ),
                   ),
                 ),
               ),
