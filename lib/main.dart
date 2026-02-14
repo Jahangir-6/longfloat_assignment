@@ -1,6 +1,5 @@
 import 'package:custom_painting/painters/chatbot_logo.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'widgets/chat_input.dart';
 
 void main() {
@@ -19,6 +18,12 @@ class MyApp extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: [
+              Image.asset(
+                'assets/gifs/screencast_clear.gif',
+                width: 300, // optional width
+                height: 200, // optional height
+                fit: BoxFit.contain, // scale the GIF nicely
+              ),
               const TalkingBot(size: 240),
 
               Spacer(),
