@@ -18,12 +18,6 @@ class MyApp extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: [
-              Image.asset(
-                'assets/gifs/screencast_clear.gif',
-                width: 300, // optional width
-                height: 200, // optional height
-                fit: BoxFit.contain, // scale the GIF nicely
-              ),
               const TalkingBot(size: 240),
 
               Spacer(),
